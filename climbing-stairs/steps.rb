@@ -19,9 +19,6 @@ def climb_stairs(n)
       tmp = tmp + fib
       fib = tmp - fib
     }
-    puts tmp
     return tmp
   end
 end 
-
-climb_stairs(10)
