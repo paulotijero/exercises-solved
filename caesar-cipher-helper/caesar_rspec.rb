@@ -2,13 +2,6 @@ require './caesar'
 
 RSpec.describe "Test encrypt" do
   c = CaesarCipher.new(5)
-
-  # Test.assert_equals(c.encode('Codewars'), 'HTIJBFWX')
-  # Test.assert_equals(c.decode('HTIJBFWX'), 'CODEWARS')
-  # Test.assert_equals(c.encode('WAFFLES'), 'BFKKQJX')
-  # Test.assert_equals(c.decode('BFKKQJX'), 'WAFFLES')
-  # Test.assert_equals(c.encode("IT'S A SHIFT CIPHER!!"), "NY'X F XMNKY HNUMJW!!")
-  # Test.assert_equals(c.decode("NY'X F XMNKY HNUMJW!!"), "IT'S A SHIFT CIPHER!!")
   
   it "Encode the string 'Codewars'" do
     expect(c.encode("Codewars")).to eq("HTIJBFWX")
